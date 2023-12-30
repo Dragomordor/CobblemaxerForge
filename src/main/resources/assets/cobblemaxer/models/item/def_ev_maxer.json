@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "cobblemaxer:item/def_ev_maxer"
+  }
+}
