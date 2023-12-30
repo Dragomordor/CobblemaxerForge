@@ -28,4 +28,4 @@ Cobblemaxer Mod was developed by Dragomordor
 
 This mod is licensed under the MIT liscense. Refer to the LICENSE file for more information.
 
-Happy Pokémon training with the Cobble Maxer Mod!
+Happy Pokémon training with the Cobblemaxer Mod!
