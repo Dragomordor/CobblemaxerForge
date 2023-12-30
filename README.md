@@ -1,6 +1,6 @@
-# Cobble Maxer Mod (Forge)
+# Cobblemaxer Mod (Forge)
 
-Cobble Maxer is a Minecraft Forge mod designed to enhance the gameplay experience by offering items that allow players to manipulate various stats of Pokémon within the game.
+Cobblemaxer is a Minecraft Forge mod designed to enhance the gameplay experience by offering items that allow players to manipulate various stats of Pokémon within the game.
 
 ## Features
 
@@ -22,7 +22,7 @@ If you encounter any issues or have suggestions for improvement, feel free to cr
 
 ## Credits
 
-Cobble Maxer Mod was developed by Dragomordor
+Cobblemaxer Mod was developed by Dragomordor
 
 ## License
 
