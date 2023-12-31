@@ -1,6 +1,6 @@
 # Cobblemaxer Mod (Forge)
 
-Cobblemaxer is a Minecraft Forge mod designed to enhance the gameplay experience by offering items that allow players to manipulate various stats of Pokémon within the game.
+Cobblemaxer is a Minecraft mod designed to enhance the gameplay experience by offering items that allow players to manipulate various stats of Pokémon within the game.
 
 ## Features
 
