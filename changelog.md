@@ -6,10 +6,11 @@
   - **Gender Swapper Item:** Allows swapping the gender of a Pokémon.
   - **Shiny Swapper Item:** Enables swapping the shiny status of a Pokémon.
   - **Caught Ball Swapper Items:**  Introduces items for changing the caught ball of a Pokémon.
-  - **Nature CHanger Items:**  Introduces items for changing the nature of a Pokémon.
+  - **Nature Changer Items:**  Introduces items for changing the nature of a Pokémon.
 #### Tier items:
-- Tier/Rarity items, with values changeable in the config (cobblemizer/cobblemizer.json)
-- Tiered items:
+Tier/Rarity items, with values changeable in the config (cobblemizer/cobblemizer.json)
+***Tiered items:***
+
   - **Friendship Increasing Items:**  Introduces items for increasing the friendship levels of a Pokémon.
   - **IV increasing Items:**  Introduces items for increasing the IV levels of a Pokémon.
   - **EV increasing Items:**  Introduces items for increasing the EV levels of a Pokémon.
