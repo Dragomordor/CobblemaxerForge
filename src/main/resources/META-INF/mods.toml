@@ -1,34 +1,34 @@
 modLoader = "javafml"
 loaderVersion = "[47,)"
 license = "MIT"
-logoFile = "icon.png"
+icon = "assets/cobblemizer/icon.png"
 
 [[mods]]
-modId = "cobblemaxer"
-version = "1.0.0"
-displayName = "Cobble Maxer for Forge"
+modId = "cobblemizer"
+version = "2.0.0"
+displayName = "Cobblemon Customizer for Forge"
 authors = "Dragomordor"
 description = '''
-Adds items that maximize (or randomize) the IV's, EV's and Level of Pokémon
+Adds items that allow players to manipulate various stats and aesthetic characteristics of Pokémon within the game.
 '''
 
-[[dependencies.cobblemaxer]]
+[[dependencies.cobblemizer]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.20.1]"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.cobblemaxer]]
+[[dependencies.cobblemizer]]
 modId = "forge"
 mandatory = true
 versionRange = "[47,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.cobblemaxer]]
+[[dependencies.cobblemizer]]
 modId = "cobblemon"
 mandatory = true
-versionRange = "[1.4.0,)"
+versionRange = "[1.4.1,)"
 ordering = "NONE"
 side = "BOTH"

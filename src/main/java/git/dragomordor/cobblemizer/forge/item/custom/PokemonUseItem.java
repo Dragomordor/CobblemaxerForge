@@ -1,4 +1,4 @@
-package git.dragomordor.cobblemaxer.forge.item.custom;
+package git.dragomordor.cobblemizer.forge.item.custom;
 
 import com.cobblemon.mod.common.api.interaction.PokemonEntityInteraction.Ownership;
 import com.cobblemon.mod.common.api.storage.StoreCoordinates;

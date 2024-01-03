@@ -1,3 +1,5 @@
+rootProject.name = "CobblemizerForge"
+
 pluginManagement {
     repositories {
         maven("https://maven.fabricmc.net/")
