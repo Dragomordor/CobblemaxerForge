@@ -1,33 +1,36 @@
-package git.dragomordor.cobblemaxer.forge.item.custom;
+package git.dragomordor.cobblemizer.forge.item.custom;
 
 import com.cobblemon.mod.common.api.pokemon.stats.Stat;
+import com.cobblemon.mod.common.api.pokemon.stats.Stats;
 import com.cobblemon.mod.common.entity.pokemon.PokemonEntity;
 import com.cobblemon.mod.common.pokemon.EVs;
 import com.cobblemon.mod.common.pokemon.Pokemon;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.network.chat.Component;
 
-public class EVMaxerItem extends PokemonUseItem{
-    private final Stat statToBoost;
+import java.util.Random;
 
-    public EVMaxerItem(Stat statToBoost) {
+public class EVRandomItem extends PokemonUseItem {
+
+    public EVRandomItem() {
         super(new Properties().stacksTo(1));
-        this.statToBoost = statToBoost;
     }
 
     @Override
     public InteractionResult processInteraction(ItemStack itemStack, Player player, PokemonEntity target, Pokemon pokemon) {
         EVs evs = pokemon.getEvs(); // Access the EVs of the Pokémon
-        // TODO: add error message if stat is already maxe
-        // TODO: add maximum available, not a maximum value
+        Random random = new Random(); // random number generator
 
-        // When input is a given stat, max that stat
-        evs.add(this.statToBoost, EVs.MAX_STAT_VALUE); // Increase the specified EV stat to its maximum value
+        // Randomize all EV stats
+        for (Stat stat : Stats.values()) {
+            int randomValue = random.nextInt(EVs.MAX_STAT_VALUE + 1); // Generate a random value between 0 and MAX_STAT_VALUE (inclusive)
+            evs.set(stat, randomValue); // Set each EV stat to the generated random value
+        }
+
         itemStack.setCount(itemStack.getCount() - 1); // remove item after use
-        String statDisplayName = this.statToBoost.getDisplayName().getString();
-        player.sendSystemMessage(Component.translatable(statDisplayName + " EV boosted to maximum!"));
+        player.sendSystemMessage(Component.translatable("All EVs randomized"));
         return InteractionResult.SUCCESS;
     }
 }

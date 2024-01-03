@@ -1,4 +1,4 @@
-package git.dragomordor.cobblemaxer.forge.item.custom;
+package git.dragomordor.cobblemizer.forge.item.custom;
 
 import com.cobblemon.mod.common.Cobblemon;
 import com.cobblemon.mod.common.entity.pokemon.PokemonEntity;
@@ -24,7 +24,7 @@ public class LVLRandomItem extends PokemonUseItem {
         pokemon.setLevel(randomLevel);
 
         itemStack.setCount(itemStack.getCount() - 1); // remove item after use
-        player.sendSystemMessage(Component.translatable("Pokémon level randomized!"));
+        player.sendSystemMessage(Component.translatable("Pokémon level randomized"));
         return InteractionResult.SUCCESS;
     }
 }

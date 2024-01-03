@@ -2,12 +2,14 @@ plugins {
     id("java")
     id("dev.architectury.loom") version("1.2-SNAPSHOT")
     id("architectury-plugin") version("3.4-SNAPSHOT")
+    //id("org.jetbrains.kotlin.jvm") version("1.9.22")
     id("org.jetbrains.kotlin.jvm") version("1.8.21")
+    //kotlin("jvm") version ("1.9.22")
+
 }
 
-
-group = "git.dragomordor.cobblemaxer.forge"
-version = "1.0.0"
+group = "git.dragomordor.cobblemizer.forge"
+version = "2.0.0"
 
 architectury {
     platformSetupLoomIde()
@@ -35,13 +37,12 @@ dependencies {
     mappings(loom.officialMojangMappings())
     forge("net.minecraftforge:forge:1.20.1-47.2.0")
 
-    modImplementation("com.cobblemon:forge:1.4.0+1.20.1-SNAPSHOT")
+    modImplementation("com.cobblemon:forge:1.4.1+1.20.1")
     runtimeOnly("thedarkcolour:kotlinforforge:4.5.0")
-
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.0")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.0")
 }
 
-tasks.getByName<Test>("test") {
-    useJUnitPlatform()
+tasks {
+    compileKotlin {
+        kotlinOptions.jvmTarget = "17"
+    }
 }

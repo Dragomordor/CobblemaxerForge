@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "cobblemaxer:item/spatk_ev_maxer"
-  }
-}

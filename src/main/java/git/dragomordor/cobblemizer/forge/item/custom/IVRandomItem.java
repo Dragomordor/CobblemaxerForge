@@ -1,4 +1,4 @@
-package git.dragomordor.cobblemaxer.forge.item.custom;
+package git.dragomordor.cobblemizer.forge.item.custom;
 
 import com.cobblemon.mod.common.api.pokemon.stats.Stat;
 import com.cobblemon.mod.common.api.pokemon.stats.Stats;
@@ -29,7 +29,7 @@ public class IVRandomItem extends PokemonUseItem {
         }
 
         itemStack.setCount(itemStack.getCount() - 1); // remove item after use
-        player.sendSystemMessage(Component.translatable("All IVs randomized!"));
+        player.sendSystemMessage(Component.translatable("All IVs randomized"));
         return InteractionResult.SUCCESS;
     }
 }
