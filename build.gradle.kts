@@ -2,8 +2,7 @@ plugins {
     id("java")
     id("dev.architectury.loom") version("1.2-SNAPSHOT")
     id("architectury-plugin") version("3.4-SNAPSHOT")
-    //id("org.jetbrains.kotlin.jvm") version("1.9.22")
-    id("org.jetbrains.kotlin.jvm") version("1.8.21")
+    id("org.jetbrains.kotlin.jvm") version("1.8.27")
     //kotlin("jvm") version ("1.9.22")
 
 }
@@ -39,10 +38,4 @@ dependencies {
 
     modImplementation("com.cobblemon:forge:1.4.1+1.20.1")
     runtimeOnly("thedarkcolour:kotlinforforge:4.5.0")
-}
-
-tasks {
-    compileKotlin {
-        kotlinOptions.jvmTarget = "17"
-    }
 }
